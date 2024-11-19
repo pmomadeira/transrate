@@ -2,17 +2,17 @@ snap:
   binaries:
     - snap-aligner
   version:
-    number: '2.0.1'
-    command: 'snap-aligner'
+    number: "2.0.3"
+    command: "snap-aligner"
   url:
     64bit:
-      linux: https://github.com/amplab/snap/releases/download/v2.0.1/snap-aligner/
+      linux: https://github.com/amplab/snap/releases/download/v2.0.3/snap-aligner/
 bam-read:
   binaries:
-   - bam-read
+    - bam-read
   version:
-    number: '1.0.0'
-    command: 'bam-read'
+    number: "1.0.0"
+    command: "bam-read"
   url:
     64bit:
       linux: https://github.com/Blahah/transrate-tools/releases/download/v1.0.0/bam-read_v1.0.0_linux.tar.gz
@@ -37,9 +37,9 @@ salmon:
     - libtbbmalloc.dylib
     - libtbbmalloc_proxy.dylib
   version:
-    number: '1.7.0'
-    command: 'salmon -v'
+    number: "1.10.3"
+    command: "salmon -v"
   url:
     64bit:
-      linux: https://github.com/COMBINE-lab/salmon/releases/download/v1.7.0/Salmon-1.7.0_linux_x86_64.tar.gz
-      macosx: https://github.com/COMBINE-lab/salmon/releases/download/v1.7.0/Salmon-1.7.0_macOS_10.12.tar.gz
+      linux: https://github.com/COMBINE-lab/salmon/archive/v1.10.3.tar.gz
+      macosx: https://github.com/COMBINE-lab/salmon/archive/v1.10.3.tar.gz
