@@ -10,11 +10,12 @@ module Transrate
     attr_reader :index_name, :bam, :read_count
 
     def initialize
-      conda_snap_path = File.join(ENV["CONDA_PREFIX"], "bin", "snap_aligner")
-      if !File.exist?(conda_snap_path)
-        raise SnapError.new("Could not find snap_aligner in conda environment")
+      which_snap = Cmd.new('which snap-aligner')
+      which_snap.run
+      if !which_snap.status.success?
+        raise SnapError.new("could not find snap in the path")
       end
-      @snap = conda_snap_path
+      @snap = which_snap.stdout.split("\n").first
 
       @index_built = false
       @index_name = ""
