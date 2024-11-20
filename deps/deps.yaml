@@ -2,11 +2,11 @@ snap:
   binaries:
     - snap-aligner
   version:
-    number: "2.0.3"
+    number: "2.0.1"
     command: "snap-aligner"
   url:
     64bit:
-      linux: https://github.com/amplab/snap/releases/download/v2.0.3/snap-aligner/
+      linux: https://github.com/amplab/snap/releases/download/v2.0.1/snap-aligner/
 bam-read:
   binaries:
     - bam-read
